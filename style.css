@@ -1,0 +1,130 @@
+#root{
+    background-color: rgb(172, 167, 161);
+    font-family: Russo One;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+#drum-machine{
+    border: 3px solid rgb(247, 155, 80);
+    border-radius: 15px;
+    padding: 1.2em;
+    background-color: rgb(170, 168, 168);
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    grid-gap: 40px;
+}
+
+.drum-pad{
+    padding: 30px;
+    background-color: grey;
+    font-size: 20px;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    width: 80px;
+    height: 80px;
+    border-style: none;
+    border-radius: 10%;
+    box-shadow: 3px 3px rgb(58, 56, 56);  
+}
+
+#text{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#display-text{
+    width:60%;
+    height:20%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    background-color: grey;
+}
+
+#display-volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#volume{
+    margin-left: 10px;
+}
+
+#display-bank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 10px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(247, 155, 80);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+@media only screen and (max-width: 1030px){
+    .drum-pad{
+       padding: 10px;
+       width: 45px;
+       height: 45px;      
+    }
+}
+
+
+
+
+
+
+  
+  
+  
+
