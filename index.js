@@ -5,7 +5,7 @@ function DrumMachine(){
     const [bank, setBank] = React.useState(bank1);
     return(
         <div>
-            <h1 className="text-center mt-3">DRUM MACHINE</h1>
+            <h1 className="text-center mt-3">DRUM SIMULATOR</h1>
             <div id="drum-machine" className="mt-3"> 
                 <div id="grid-container">               
                     {bank.map(item => (<Pad clip={item} vol={volume} key={item.id}/>))}  
